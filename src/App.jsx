@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import ServiceSummary from "./sections/ServiceSummary";
-import Services from "./sections/Services";
+import Experience from "./sections/Experience";
 import ReactLenis from "lenis/react";
 import About from "./sections/About";
 import Works from "./sections/Works";
@@ -43,7 +43,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <ServiceSummary />
-        <Services />
+        <Experience />
         <About />
         <Works />
         <ContactSummary />

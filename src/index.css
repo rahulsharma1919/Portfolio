@@ -109,6 +109,41 @@
   }
 }
 
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 5px;
+  /* scrollbar width */
+  height: 5px;
+  /* horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f5b548, #cfa355);
+  /* thumb gradient */
+  border-radius: 10px;
+  border: none;
+  /* remove extra space */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e9a125, #d3a351);
+  /* hover effect */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  /* thinner scrollbar */
+  scrollbar-color: #cfa355 transparent;
+  /* thumb color | transparent track */
+}
+
+
 body {
   background: #e5e5e0;
   color: black;
