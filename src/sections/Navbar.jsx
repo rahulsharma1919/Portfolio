@@ -124,9 +124,11 @@ const Navbar = () => {
         >
           <div className="font-light">
             <p className="tracking-wider text-white/50">E-mail</p>
-            <p className="text-xl tracking-widest lowercase text-pretty">
-              rahul1sharma1919@gmail.com
-            </p>
+            <a href="mailto:rahul1sharma1919@gmail.com">
+              <p className="text-xl tracking-widest lowercase text-pretty hover:text-white">
+                rahul1sharma1919@gmail.com
+              </p>
+            </a>
           </div>
           <div className="font-light">
             <p className="tracking-wider text-white/50">Social Media</p>

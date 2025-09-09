@@ -14,10 +14,10 @@ const About = () => {
 experience, crafting solutions that merge performance with 
 creativity. My focus is always on writing clean, reliable code 
 and delivering real impact.
-💻 💻 Skilled in React.js, Tailwind, Express.js, Python, C++, SQL/MySQL, 
+💻 Skilled in React.js, Tailwind, Express.js, Python, C++, SQL/MySQL, 
 Firebase, Git/GitHub & DSA — I love building clean, scalable apps.
 🎮 Beyond code: gaming, adventurous books 📚, traveling ✈️, music 🎶, anime, 
-and bingeing sci-fi 🚀, thriller 🔍, horror 👻 & comedy 😂.  
+and watch sci-fi 🚀, thriller 🔍, horror 👻 & comedy movies😂.  
 🚀 Vision: grow as a Software Engineer, crafting impactful products that 
 blend performance with creativity (and a little fun).`;
 
