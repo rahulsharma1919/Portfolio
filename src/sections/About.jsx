@@ -74,7 +74,7 @@ blend performance with creativity (and a little fun).`;
       {/* Button below the image-text container */}
       <div className="flex justify-center pb-16">
         <a
-          href="./assets/docs/Rahul_Sharma SDE.pdf"
+          href="./assets/Rahul_Sharma SDE.pdf"
           download="Rahul_Sharma SDE.pdf"
           className="md:block text-white cursor-pointer"
         >
