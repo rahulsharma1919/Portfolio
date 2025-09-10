@@ -158,7 +158,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-8 uppercase text-sm tracking-wider">
+        <div className="absolute left-1/2 transform -translate-x-1/2 flex gap-8 uppercase text-md tracking-wider">
           {["home", "experience", "about", "project", "contact"].map(
             (section, i) => (
               <Link
