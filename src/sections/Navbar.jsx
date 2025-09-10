@@ -163,7 +163,7 @@ const Navbar = () => {
             (section, i) => (
               <Link
                 key={i}
-                to={section}
+                to={`${section}`}
                 smooth
                 duration={1000}
                 className="cursor-pointer hover:text-black/50"
