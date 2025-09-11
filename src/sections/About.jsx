@@ -10,16 +10,10 @@ const About = () => {
     passionate about building scalable, efficient, and
     user-focused applications.`;
 
-  const aboutText = `I bring a balance of strong technical skills and practical 
-experience, crafting solutions that merge performance with 
-creativity. My focus is always on writing clean, reliable code 
-and delivering real impact.
-💻 Skilled in React.js, Tailwind, Express.js, Python, C++, SQL/MySQL, 
-Firebase, Git/GitHub & DSA — I love building clean, scalable apps.
-🎮 Beyond code: gaming, adventurous books 📚, traveling ✈️, music 🎶, anime, 
-and watch sci-fi 🚀, thriller 🔍, horror 👻 & comedy movies😂.  
-🚀 Vision: grow as a Software Engineer, crafting impactful products that 
-blend performance with creativity (and a little fun).`;
+  const aboutText = `I bring a balance of strong technical skills and practical experience, crafting solutions that merge performance with creativity. My focus is always on writing clean, reliable code and delivering real impact.
+💻 Skilled in React.js, Tailwind, Express.js, Python, C++, SQL/MySQL, Firebase, Git/GitHub & DSA — I love building clean, scalable apps.
+🎮 Beyond code: gaming, adventurous books 📚, traveling ✈️, music 🎶, anime, and watch sci-fi 🚀, thriller 🔍, horror 👻 & comedy movies😂.  
+🚀 Vision: grow as a Software Engineer, crafting impactful products that blend performance with creativity (and a little fun).`;
 
   const imgRef = useRef(null);
 
@@ -62,21 +56,21 @@ blend performance with creativity (and a little fun).`;
         <img
           ref={imgRef}
           src="images/rahul.jpg"
-          alt="man"
-          className="w-md rounded-3xl"
+          alt="self"
+          className="w-xs rounded-3xl"
         />
         <AnimatedTextLines
           text={aboutText}
-          className="w-full text-white/60 text-xl font-light tracking-wide lg:text-3xl"
+          className="w-full text-white/70 text-md py-15 font-light tracking-wide lg:text-xl"
         />
       </div>
 
       {/* Button below the image-text container */}
-      <div className="flex justify-center pb-16">
+      <div className="flex justify-center -mt-20 pb-16">
         <a
           href="./assets/Rahul_Sharma SDE.pdf"
           download="Rahul_Sharma SDE.pdf"
-          className="md:block text-white cursor-pointer"
+          className="md:block text-white/60 cursor-pointer"
         >
           <Button
             id="download-cv-button"

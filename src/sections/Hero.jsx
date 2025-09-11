@@ -80,10 +80,8 @@ results driven webs/apps`;
           strokeWidth="1.5"
           className="relative"
         >
-          {/* Create arrow shape */}
           <path d="M6 9l6 6 6-6" />
           <path d="M6 15l6 6 6-6" />
-          {/* Light reflection effect */}
           <defs>
             <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
               <stop offset="50%" stopColor="white" stopOpacity="0.9" />
