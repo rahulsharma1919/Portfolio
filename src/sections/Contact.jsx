@@ -5,8 +5,6 @@ import { socials } from "../constants";
 import gsap from "gsap";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Alert from "../components/Alert";
-import BinaryHover from "../components/BinaryHover";
 import StatefulButton from "../components/StatefulButton";
 
 const Contact = () => {
@@ -77,6 +75,17 @@ const Contact = () => {
         trigger: ".social-link",
       },
     });
+    gsap.from(".contact-form", {
+      y: 100,
+      opacity: 0,
+      delay: 0.5,
+      duration: 1,
+      stagger: 0.3,
+      ease: "back.out",
+      scrollTrigger: {
+        trigger: ".contact-form",
+      },
+    });
   }, []);
 
   return (
@@ -137,7 +146,7 @@ const Contact = () => {
           <div className="w-full lg:w-1/2">
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-5 text-white tracking-wide"
+              className="contact-form flex flex-col gap-5 text-white tracking-wide"
             >
               <input
                 type="text"
@@ -173,6 +182,7 @@ const Contact = () => {
                 required
                 autoComplete="message"
               />
+
               <StatefulButton isLoading={isLoading} status={status} />
             </form>
           </div>

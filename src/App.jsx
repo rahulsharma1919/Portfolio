@@ -9,10 +9,12 @@ import Works from "./sections/Works";
 import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
+import ChatBot from "./components/ChatBot";
 
 const App = () => {
   const { progress } = useProgress();
   const [isReady, setIsReady] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   useEffect(() => {
     if (progress === 100) {
@@ -40,7 +42,8 @@ const App = () => {
           isReady ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000`}
       >
-        <Navbar />
+        <Navbar isOpen={isNavOpen} setIsOpen={setIsNavOpen} />
+        <ChatBot isNavOpen={isNavOpen} />
         <Hero />
         <ServiceSummary />
         <Experience />

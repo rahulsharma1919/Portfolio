@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { Link } from "react-scroll";
 import BinaryHover from "../components/BinaryHover";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, setIsOpen }) => {
   const navRef = useRef(null);
   const linksRef = useRef([]);
   const contactRef = useRef(null);
@@ -14,7 +14,7 @@ const Navbar = () => {
   const topNavbarRef = useRef(null); // 🔹 for horizontal navbar
   const tl = useRef(null);
   const iconTl = useRef(null);
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   const [showBurger, setShowBurger] = useState(false); // start hidden
   const [dateTime, setDateTime] = useState({ time: "", date: "" });
 

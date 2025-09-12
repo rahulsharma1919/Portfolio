@@ -56,7 +56,7 @@ const Experience = () => {
           <div className="flex flex-col gap-4 font-light">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
               <h2 className="text-3xl lg:text-4xl">{exp.title}</h2>
-              <span className="text-lg text-white/50">{exp.date}</span>
+              <span className="text-xl text-white/50">{exp.date}</span>
             </div>
 
             <p className="text-xl font-semibold text-white/70">

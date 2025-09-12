@@ -12,8 +12,8 @@ const About = () => {
 
   const aboutText = `I bring a balance of strong technical skills and practical experience, crafting solutions that merge performance with creativity. My focus is always on writing clean, reliable code and delivering real impact.
 💻 Skilled in React.js, Tailwind, Express.js, Python, C++, SQL/MySQL, Firebase, Git/GitHub & DSA — I love building clean, scalable apps.
-🎮 Beyond code: gaming, adventurous books 📚, traveling ✈️, music 🎶, anime, and watch sci-fi 🚀, thriller 🔍, horror 👻 & comedy movies😂.  
-🚀 Vision: grow as a Software Engineer, crafting impactful products that blend performance with creativity (and a little fun).`;
+🎮 Beyond code: Gaming, adventurous books 📚, traveling ✈️, music 🎶, anime, and watch sci-fi 🚀, thriller 🔍, horror 👻 & comedy movies😂.  
+🚀 Vision: Grow as a Software Engineer, crafting impactful products that blend performance with creativity (and a little fun).`;
 
   const imgRef = useRef(null);
 
@@ -38,6 +38,18 @@ const About = () => {
       duration: 2,
       ease: "power4.out",
       scrollTrigger: { trigger: imgRef.current },
+    });
+
+    gsap.from(".download-cv", {
+      y: 100,
+      opacity: 0,
+      delay: 0.1,
+      duration: 1,
+      stagger: 0.3,
+      ease: "back.out",
+      scrollTrigger: {
+        trigger: ".download-cv",
+      },
     });
   });
 
@@ -66,16 +78,13 @@ const About = () => {
       </div>
 
       {/* Button below the image-text container */}
-      <div className="flex justify-center -mt-20 pb-16">
+      <div className="download-cv flex justify-center -mt-20 pb-16">
         <a
           href="./assets/Rahul_Sharma SDE.pdf"
           download="Rahul_Sharma SDE.pdf"
           className="md:block text-white/60 cursor-pointer"
         >
-          <Button
-            id="download-cv-button"
-            containerClass="md:flex items-center justify-center gap-1 hover-animation"
-          />
+          <Button containerClass="md:flex items-center justify-center gap-2" />
         </a>
       </div>
     </section>
